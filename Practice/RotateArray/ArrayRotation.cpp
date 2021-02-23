@@ -1,6 +1,6 @@
 
 // Code to rotate an array in the right direction
-
+// Approach 1 ( Complexity - O(nk) )
 #include <bits/stdc++.h> 
 
 using namespace std;
