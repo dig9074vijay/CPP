@@ -36,6 +36,10 @@ int main()
 	cout << "\n" << *it1 << endl;
 	cout << *it2 << endl;
 	cout <<  it2 - it1;
+	//set
+	//map
+	//pair
+	//stl 2
 }
 
 
