@@ -1,5 +1,5 @@
-//bruteforce approach
-//O(N^3)
+//Kadanes Algorithm
+//O(n)
 #include<iostream>
 using namespace std;
 
