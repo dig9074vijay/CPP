@@ -1,5 +1,5 @@
-//bruteforce approach
-//O(N^3)
+
+//O(N+Range)
 #include<iostream>
 #include<vector>
 using namespace std;
