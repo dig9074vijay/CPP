@@ -5,7 +5,7 @@ using namespace std;
 struct Node{
     int info ;
     Node* next;
-}*newptr,*save,*ptr,*front,*rear;
+}*newptr,*ptr,*front,*rear;
 
 Node* CreateNewNode(int data){
     ptr = new Node;
@@ -14,9 +14,10 @@ Node* CreateNewNode(int data){
     return ptr;
 }
 
-void Push(Node* &rear, Node* &front, Node* np){
+void Push(Node* np){
     if(rear == NULL){
-        rear = front  = np;
+        rear = np;
+        front  = np;
     }
     else{
         rear->next = newptr;
@@ -24,14 +25,16 @@ void Push(Node* &rear, Node* &front, Node* np){
     }
 }
 
-void Pop(Node* &rear, Node* &front){
+void Pop(){
     if(front == NULL){
         cout<<"Empty";
     }
     else{
-        save = front;
+        
+        ptr = front;
         front = front->next;
-        delete front;
+        delete ptr;
+       // cout<<"Inside POP 2";
     }
 }
 
@@ -47,12 +50,12 @@ int main(){
         cout<<"Enter the data to be entered into the queue ";
         cin>>d;
         newptr = CreateNewNode(d);
-        Push(front,rear,newptr);
+        Push(newptr);
         cout<<"Wanna enter more?";
         cin>>ch; 
     }
     while(front!=NULL ){
         cout<<frontele()<<endl;
-        Pop(front,rear);
+        Pop();
     }
 }
