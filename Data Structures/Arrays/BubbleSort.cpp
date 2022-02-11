@@ -5,7 +5,7 @@ using namespace std;
 void BubbleSort(int a[],int n){
 
     for(int times = 1; times<=n-1;times++){
-        for (int i = 0; i< n-times-1;i++){
+        for (int i = 0; i<= n-times-1;i++){
             if(a[i]>a[i+1])
                 swap(a[i],a[i+1]);
 
