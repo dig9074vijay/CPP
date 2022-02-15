@@ -35,6 +35,20 @@ void printBST(Node* root){
     printBST(root->right);    
 }
 
+bool search(Node* root,int key){
+    if(root==NULL){
+        return false;
+    }
+    if(key== root->val){
+        return true;
+    }
+    if(key< root->val){
+        return search(root->left,key);
+    }
+  
+        return search(root->right,key);
+}
+
 int main(){
     Node* root = NULL;
     int a[] = { 8,3,10,1,6,14,4,7,12 };
@@ -43,4 +57,8 @@ int main(){
     }
 
     printBST(root);
+    int key;
+    cin>>key;
+    cout<<search(root,key);
+
 }
