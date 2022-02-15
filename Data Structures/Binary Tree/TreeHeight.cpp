@@ -115,10 +115,10 @@ int TreeDia(Node* root){
     if(root==NULL){
         return 0;
     }
-    int d1 = TreeHeight(root->left) + TreeHeight(root->right);
     int d2 = TreeDia(root->left);
     int d3 = TreeDia(root->right);
-   
+    int d1 = TreeHeight(root->left) + TreeHeight(root->right);
+    
     return max(d1,max(d2,d3));
 
 }
