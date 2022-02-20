@@ -3,6 +3,7 @@
 using namespace std;
 
 //1 2 4 -1 -1 5 7 -1 -1 -1 3 -1 6 -1 -1
+// 1 2 3 4 5 -1 6 -1 -1 7 -1 -1 -1 -1 -1 Level Order Build
 //1 2 4 5 7 3 6  Preorder
 //4 2 7 5 1 3 6  Inorder
 //4 7 5 2 6 3 1 Postorder
